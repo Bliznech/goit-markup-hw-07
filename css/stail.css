@@ -707,17 +707,16 @@ h2 {
 }
 
 .footer-form-clas {
-  margin-left: 288px;
-  margin-top: -80px;
+  display: block;
 }
 .svg-telega {
   margin-left: 16px;
 }
 
-.footer-inlain-position {
+/* .footer-inlain-position {
   display: flex;
   margin-left: auto;
-}
+} */
 
 /* Button POrtfolio */
 .meny {
