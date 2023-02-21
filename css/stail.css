@@ -47,24 +47,29 @@ img {
 }
 
 /* Conteiner */
-
-.conteiner {
-  min-width: 320px;
-  max-width: 426px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+@media screen and (max-width: 768px) {
+  .conteiner {
+    min-width: 320px;
+    max-width: 428px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 @media screen and (min-width: 768px) {
   .conteiner {
-    max-width: 768px;
+    width: 768px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1158px) {
   .conteiner {
-    max-width: 1158px;
+    width: 1158px;
     /* padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto; */
@@ -315,7 +320,9 @@ h2 {
   color: var(--general-text-color);
   margin-top: 8px;
 }
-
+.benefits .firsttitle {
+  text-align: left;
+}
 .firsttitle {
   text-align: center;
   font-weight: 500;
@@ -325,11 +332,11 @@ h2 {
   letter-spacing: 0.02em;
   color: var(--general-text-color);
 }
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
   .firsttitle {
-    text-align: left;
+    text-align: ;
   }
-}
+} */
 @media screen and (min-width: 1200px) {
   .firsttitle {
     font-style: medium;
@@ -350,8 +357,15 @@ h2 {
 @media screen and (min-width: 768px) {
   .conteiner-strategy {
     display: flex;
-
-    /* margin: -12px; */
+    gap: 72px 24px;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .conteiner-strategy {
+    display: flex;
+    gap: 72px 24px;
+    flex-wrap: wrap;
   }
 }
 
@@ -370,19 +384,20 @@ h2 {
 }
 
 /*Section1*/
-.benefits {
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 72px;
-  align-items: center;
-  padding-inline-start: 0px;
-  /* width: 264px; */
+@media screen and (max-width: 767px) {
+  .benefits {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 72px;
+    align-items: center;
+    padding-inline-start: 0px;
+    /* width: 264px; */
+  }
 }
+
 @media screen and (min-width: 768px) {
   .benefits {
-    margin-left: 24px;
-    margin-bottom: 72px;
-    width: 356px;
+    flex-basis: calc(100% / 2 - 24px);
 
     /* flex-wrap: wrap; */
   }
@@ -395,15 +410,9 @@ h2 {
 }
 @media screen and (min-width: 1200px) {
   .benefits {
-    width: 264px;
-    display: inline;
-    margin-left: 24px;
-    align-items: center;
-    padding-inline-start: 0px;
+    flex-basis: calc(100% / 4 - (3 * 24px));
+
     /* width: 264px; */
-  }
-  .benefits:first-child {
-    margin-left: 0;
   }
 }
 
@@ -437,19 +446,44 @@ h2 {
 }
 
 /* Section2 */
-.wawd {
-  margin-bottom: 72px;
-}
-
 .index-img-first {
   display: flex;
   margin-top: 72px;
   padding-bottom: 120px;
 }
+@media screen and (max-width: 1157px) {
+  .onli-desk {
+    display: none;
+  }
+}
 
-.index-img-secondary {
-  display: flex;
-  margin-top: 72px;
+.img-what-we-dung {
+  margin-left: 24px;
+}
+.img-what-we-dung:first-child {
+  margin-left: 0;
+}
+
+.wawd {
+  margin-bottom: 72px;
+}
+@media screen and (max-width: 767px) {
+  .index-img-secondary {
+    display: block;
+
+    margin-top: 72px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .index-img-secondary {
+    display: flex;
+    margin-top: 72px;
+    flex-wrap: wrap;
+    gap: 64px 24px;
+    justify-content: center;
+    text-align: center;
+  }
 }
 
 .comand {
@@ -459,17 +493,26 @@ h2 {
 .our-team {
   padding-bottom: 72px;
 }
-
+@media screen and (max-width: 767px) {
+  .img-comand:last-child {
+    margin-bottom: 0;
+  }
+}
 .img-comand {
-  margin-left: 24px;
+  width: 264px;
+  margin: 0 auto;
+  margin-bottom: 72px;
   background-color: var(--background-saits);
   background: #ffffff;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
 }
-.img-comand:first-child {
-  margin-left: 0;
+
+@media screen and (min-width: 768px) {
+  .img-comand {
+    margin: 0;
+  }
 }
 
 .ul-svg-comand {
