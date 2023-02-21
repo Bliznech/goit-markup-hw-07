@@ -75,35 +75,32 @@ img {
 
 /* INDEX HEADER */
 
-.conteiner-nav {
+/* .conteiner-nav {
   padding: 0 15px;
   margin: 0 auto;
-  align-items: center;
-  /* width: 1158px; */
-  /* display: flex; */
-}
-@media screen and (min-width: 768px) and(max-width:1199px) {
-  .conteiner-nav {
+  align-items: center; */
+/* width: 1158px; */
+/* display: flex; */
+
+/* @media screen and (min-width: 768px) {
+  .conteiner {
     max-width: 768px;
-    height: 70px;
-    display: flex;
-  }
-}
-@media screen and(min-width:1200px) {
+    /* height: 70px; */
+/* display: flex; */
+
+/* @media screen and(min-width:1200px) {
   .conteiner-nav {
     max-width: 1158px;
   }
-}
-
-/* .navwebstudio {
-  display: inline;
-  margin-top: 0px;
-  margin-bottom: 0px;
 } */
+* .navwebstudio {
+  display: flex;
+  /* padding-top: 24px;
+  padding-bottom: 24px; */
+}
 
 .navigation {
   display: none;
-  /* margin-left: 76px; */
   padding: 0px;
   align-items: center;
 }
@@ -111,12 +108,14 @@ img {
   .navigation {
     display: flex;
     margin-left: 123px;
+    padding-top: 24px;
+    padding-bottom: 24px;
   }
-  .navwebstudio {
+  /* .navwebstudio {
     display: flex;
-  }
+  } */
 }
-@media screen and(min-width:1200px) {
+@media screen and (min-width: 1200px) {
   .navigation {
     margin-left: 76px;
   }
@@ -132,11 +131,11 @@ img {
 }
 
 .heder-mail-telefon:hover,
-:focus {
+.heder-mail-telefon:focus {
   color: var(--logo-text-color);
 }
 
-.navtelefon {
+/* .navtelefon {
   display: none;
   margin-left: 332px;
   padding-inline-start: 0px;
@@ -144,12 +143,47 @@ img {
   margin-bottom: 0;
   padding-top: 24px;
   padding-bottom: 24px;
-}
-.li-telefon {
+} */
+/* .li-telefon {
   margin-right: 40px;
+} */
+
+@media screen and (max-width: 760px) {
+  .navtelefon {
+    display: none;
+  }
 }
-.li-telefon:last-child {
-  margin-right: 0;
+
+@media screen and (min-width: 768px) {
+  .navtelefon {
+    padding-top: 22px;
+
+    display: block;
+    margin-left: 118px;
+  }
+  .heder-mail-telefon {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .navtelefon {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    display: flex;
+    margin-left: 332px;
+    padding-inline-start: 0px;
+  }
+  .heder-mail-telefon {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .li-telefon {
+    margin-right: 40px;
+  }
+  .li-telefon:last-child {
+    margin-right: 0;
+  }
 }
 
 .heder-text {
@@ -161,11 +195,13 @@ img {
 
 /* Heder logo */
 .heder-studio {
+  padding-top: 24px;
+  padding-bottom: 24px;
   font-family: var(--logo-text);
   font-weight: 800;
   font-size: 18px;
   line-height: 1.33;
-  display: inline;
+  display: flex;
   align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -279,27 +315,113 @@ h2 {
   color: var(--general-text-color);
   margin-top: 8px;
 }
-/*Section2*/
-.benefits {
-  margin-left: 24px;
-  align-items: center;
-  padding-inline-start: 0px;
-  width: 264px;
+
+.firsttitle {
+  text-align: center;
+  font-weight: 500;
+  font-style: bold;
+  font-size: 36px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  color: var(--general-text-color);
+}
+@media screen and (min-width: 768px) {
+  .firsttitle {
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .firsttitle {
+    font-style: medium;
+    font-size: 20px;
+    line-height: 1.2;
+  }
 }
 
-.benefits:first-child {
-  margin-left: 0;
+@media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 1200px) {
+}
+/* Conteiner Strategy */
+.conteiner-strategy {
+  display: block;
+  /* display: flex; */
+}
+@media screen and (min-width: 768px) {
+  .conteiner-strategy {
+    display: flex;
+
+    /* margin: -12px; */
+  }
+}
+
+.section-strategi {
+  padding-top: 96px;
+  padding-bottom: 96px;
+  /* padding-top: 120px;
+  padding-bottom: 120px; */
+  align-items: center;
+}
+@media screen and (min-width: 1200px) {
+  .section-strategi {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}
+
+/*Section1*/
+.benefits {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 72px;
+  align-items: center;
+  padding-inline-start: 0px;
+  /* width: 264px; */
+}
+@media screen and (min-width: 768px) {
+  .benefits {
+    margin-left: 24px;
+    margin-bottom: 72px;
+    width: 356px;
+
+    /* flex-wrap: wrap; */
+  }
+  .benefits:last-child {
+    margin-bottom: 0;
+  }
+
+  /* .benefits:last-child {
+  margin-bottom: 0; */
+}
+@media screen and (min-width: 1200px) {
+  .benefits {
+    width: 264px;
+    display: inline;
+    margin-left: 24px;
+    align-items: center;
+    padding-inline-start: 0px;
+    /* width: 264px; */
+  }
+  .benefits:first-child {
+    margin-left: 0;
+  }
 }
 
 .div-svg-strategi {
+  display: none;
   background: #f4f4fd;
   border-radius: 4px;
   width: 264px;
   height: 112px;
   margin-bottom: 8px;
-  display: flex;
+  /* display: flex; */
   justify-content: center;
   align-items: center;
+}
+@media screen and (min-width: 1200px) {
+  .div-svg-strategi {
+    display: flex;
+  }
 }
 
 .svg-strategi {
@@ -314,10 +436,7 @@ h2 {
   margin-left: 0;
 }
 
-/* Conteiner Strategy */
-.conteiner-strategy {
-  display: flex;
-}
+/* Section2 */
 .wawd {
   margin-bottom: 72px;
 }
@@ -328,13 +447,7 @@ h2 {
   padding-bottom: 120px;
 }
 
-.section-strategi {
-  padding-top: 120px;
-  padding-bottom: 120px;
-  align-items: center;
-}
-
-* Section3 */ .index-img-secondary {
+.index-img-secondary {
   display: flex;
   margin-top: 72px;
 }
@@ -640,14 +753,6 @@ h2 {
 }
 
 /* Portfolio meny */
-
-.firsttitle {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: var(--general-text-color);
-}
 
 /* BUTTON */
 .buttonStudio:hover {
