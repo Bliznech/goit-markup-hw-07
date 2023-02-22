@@ -601,30 +601,27 @@ h2 {
   font-weight: 800;
   font-size: 18px;
   line-height: 1.16;
-  display: flex;
-  align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--logo-text-color);
-  text-decoration: none;
 }
-@media screen and (max-width: 767px) {
+/* @media screen and (max-width: 767px) {
   .footer-web {
     text-align: center;
   }
-}
+} */
 
 .footer-studio {
-  font-family: var(--logo-text);
-  font-weight: 800;
+  /* font-family: var(--logo-text); */
+  /* font-weight: 800;
   font-size: 18px;
   line-height: 1.16;
   display: flex;
   align-items: center;
   letter-spacing: 0.03em;
-  text-transform: uppercase;
+  text-transform: uppercase; */
   color: var(--footer-logo-color);
-  text-decoration: none;
+  /* text-decoration: none; */
 }
 
 .footer-text {
@@ -634,6 +631,7 @@ h2 {
   letter-spacing: 0.02em;
   color: var(--footer-textcolor);
   margin-top: 16px;
+  text-align: left;
 }
 @media screen and (max-width: 1157px) {
   .footer-bagraund {
@@ -648,13 +646,23 @@ h2 {
   padding-bottom: 100px;
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) {
   .footer-bagraund .conteiner {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     row-gap: 72px;
     align-items: center;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-bagraund .conteiner {
+    flex-direction: row;
+    column-gap: 24px;
+    align-items: center;
+    text-align: center;
   }
 }
 
@@ -694,11 +702,11 @@ h2 {
 }
 
 .btn-footer-telega {
-  margin-left: 24px;
   display: flex;
-  text-align: center;
+  margin: 0 auto;
+  margin-top: 16px;
   align-items: center;
-  padding-left: 24px;
+  justify-content: center;
   width: 165px;
   height: 40px;
   border: none;
@@ -715,12 +723,19 @@ h2 {
 
 .footer-input {
   padding-left: 16px;
-  width: 264px;
+  /* width: 264px; */
   height: 40px;
   color: #ffffff;
   background-color: var(--general-text-color);
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
+}
+
+@media screen and (max-width: 767px) {
+  .footer-input {
+    min-width: 290px;
+    max-width: 398px;
+  }
 }
 
 .footer-form-clas {
