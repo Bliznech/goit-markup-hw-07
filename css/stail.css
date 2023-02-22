@@ -326,7 +326,8 @@ h2 {
 .firsttitle {
   text-align: center;
   font-weight: 500;
-  font-style: bold;
+  font-family: Roboto;
+  font-style: medium;
   font-size: 36px;
   line-height: 40px;
   letter-spacing: 0.02em;
@@ -607,6 +608,12 @@ h2 {
   color: var(--logo-text-color);
   text-decoration: none;
 }
+@media screen and (max-width: 767px) {
+  .footer-web {
+    text-align: center;
+  }
+}
+
 .footer-studio {
   font-family: var(--logo-text);
   font-weight: 800;
@@ -639,6 +646,16 @@ h2 {
   background-color: #2e2f42;
   padding-top: 100px;
   padding-bottom: 100px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .footer-bagraund .conteiner {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    row-gap: 72px;
+    align-items: center;
+  }
 }
 
 .ul-svg-footer {
