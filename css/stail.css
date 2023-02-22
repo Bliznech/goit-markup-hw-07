@@ -303,14 +303,82 @@ h2 {
   background-color: var(--general-text-color);
   margin: 0;
   text-align: center;
-  background-image: linear-gradient(
-      to right,
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
-    url(../images/people-office-format.jpg);
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (max-width: 767px) {
+  .big-heder {
+    height: 432px;
+    background-image: linear-gradient(
+        to right,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-optimal/hero-bg.jpg);
+  }
+}
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2),
+  screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2),
+  screen and (max-width: 767px) and (min-resolution: 192dpi),
+  screen and (max-width: 767px) and (min-resolution: 2dppx) {
+  .big-heder {
+    background-image: linear-gradient(
+        to right,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-optimal/hero-bg@2x.jpg);
+  }
+}
+
+@media screen and (max-width: 1157px) {
+  .big-heder {
+    height: 436px;
+    background-image: linear-gradient(
+        to right,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-optimal/hero-dg-tab.jpg);
+  }
+}
+@media screen and (max-width: 1157px) and (min-device-pixel-ratio: 2),
+  screen and (max-width: 1157px) and (-webkit-min-device-pixel-ratio: 2),
+  screen and (max-width: 1157px) and (min-resolution: 192dpi),
+  screen and (max-width: 1157px) and (min-resolution: 2dppx) {
+  .big-heder {
+    background-image: linear-gradient(
+        to right,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-optimal/hero-bg-tab@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .big-heder {
+    height: 600px;
+    background-image: linear-gradient(
+        to right,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-optimal/hero-bg-desk.jpg);
+  }
+}
+@media screen and (min-width: 1158px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 1158px) and (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-width: 1158px) and (min-resolution: 192dpi),
+  screen and (min-width: 1158px) and (min-resolution: 2dppx) {
+  .big-heder {
+    background-image: linear-gradient(
+        to right,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-optimal/hero-bg-desk@2x.jpg);
+  }
 }
 
 .text {
@@ -677,6 +745,7 @@ h2 {
 
 .ul-svg-footer {
   display: flex;
+  column-gap: 16px;
 }
 .h4-footer {
   display: block;
