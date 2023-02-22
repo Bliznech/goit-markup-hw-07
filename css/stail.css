@@ -333,11 +333,12 @@ h2 {
   letter-spacing: 0.02em;
   color: var(--general-text-color);
 }
-/* @media screen and (min-width: 768px) {
-  .firsttitle {
-    text-align: ;
-  }
-} */
+
+.neim-comand {
+  font-size: 20px;
+  line-height: 24px;
+}
+
 @media screen and (min-width: 1200px) {
   .firsttitle {
     font-style: medium;
@@ -646,7 +647,7 @@ h2 {
   padding-bottom: 100px;
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .footer-bagraund .conteiner {
     display: flex;
     flex-wrap: wrap;
@@ -657,12 +658,20 @@ h2 {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1157px) {
   .footer-bagraund .conteiner {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 72px;
+    width: 576px;
     flex-direction: row;
     column-gap: 24px;
-    align-items: center;
-    text-align: center;
+    /* align-items: center; */
+  }
+}
+@media screen and (min-width: 1158px) {
+  .footer-bagraund .conteiner {
+    display: flex;
   }
 }
 
@@ -679,6 +688,13 @@ h2 {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.02em;
+}
+
+@media screen and (min-width: 1158px) {
+  .footer-social {
+    margin-left: 120px;
+    margin-right: 80px;
+  }
 }
 
 .a-svg-footer {
@@ -704,7 +720,7 @@ h2 {
 .btn-footer-telega {
   display: flex;
   margin: 0 auto;
-  margin-top: 16px;
+  /* margin-top: 16px; */
   align-items: center;
   justify-content: center;
   width: 165px;
@@ -738,9 +754,25 @@ h2 {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .footer-input {
+    width: 264px;
+  }
+}
+
+@media screen and (min-width) {
+}
+
 .footer-form-clas {
   display: block;
 }
+.footer-inlain-position {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
 .svg-telega {
   margin-left: 16px;
 }
