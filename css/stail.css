@@ -296,8 +296,9 @@ h2 {
 }
 
 .big-heder {
+  background-repeat: no-repeat;
+  background-size: cover;
   max-width: 1440px;
-  height: 600px;
   padding-top: 188px;
   padding-bottom: 188px;
   background-color: var(--general-text-color);
