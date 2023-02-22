@@ -306,8 +306,7 @@ h2 {
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 1440px;
-  padding-top: 188px;
-  padding-bottom: 188px;
+
   background-color: var(--general-text-color);
   margin: 0;
   text-align: center;
@@ -316,6 +315,7 @@ h2 {
 }
 @media screen and (max-width: 767px) {
   .big-heder {
+    padding-top: 112px;
     height: 432px;
     background-image: linear-gradient(
         to right,
@@ -339,7 +339,7 @@ h2 {
   }
 }
 
-@media screen and (max-width: 1157px) {
+@media screen and (min-width: 768px) {
   .big-heder {
     padding-top: 112px;
     padding-bottom: 0;
@@ -352,10 +352,10 @@ h2 {
       url(../images/hero-optimal/hero-dg-tab.jpg);
   }
 }
-@media screen and (max-width: 1157px) and (min-device-pixel-ratio: 2),
-  screen and (max-width: 1157px) and (-webkit-min-device-pixel-ratio: 2),
-  screen and (max-width: 1157px) and (min-resolution: 192dpi),
-  screen and (max-width: 1157px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-width: 768px) and (min-resolution: 192dpi),
+  screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .big-heder {
     background-image: linear-gradient(
         to right,
@@ -368,6 +368,8 @@ h2 {
 
 @media screen and (min-width: 1158px) {
   .big-heder {
+    padding-top: 188px;
+    padding-bottom: 188px;
     height: 600px;
     background-image: linear-gradient(
         to right,
@@ -810,6 +812,11 @@ h2 {
   border-radius: 4px;
   cursor: pointer;
 }
+@media screen and (max-width: 767px) {
+  .btn-footer-telega {
+    margin-top: 16px;
+  }
+}
 
 .btn-footer-telega:hover,
 .btn-footer-telega:focus {
@@ -845,11 +852,14 @@ h2 {
 .footer-form-clas {
   display: block;
 }
-.footer-inlain-position {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 24px;
+
+@media screen and (min-width: 768px) {
+  .footer-inlain-position {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+  }
 }
 
 .svg-telega {
