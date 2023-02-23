@@ -45,11 +45,13 @@ img {
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+:hover {
+  color: #404bbf;
+}
 
 /* Conteiner */
 @media screen and (max-width: 767px) {
   .conteiner {
-    /* min-width: 320px; */
     max-width: 428px;
     padding-left: 15px;
     padding-right: 15px;
@@ -70,38 +72,11 @@ img {
 @media screen and (min-width: 1158px) {
   .conteiner {
     width: 1158px;
-    /* padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto; */
   }
 }
 
-/* @media screen and (min-width: 480px) { */
-
-/* INDEX HEADER */
-
-/* .conteiner-nav {
-  padding: 0 15px;
-  margin: 0 auto;
-  align-items: center; */
-/* width: 1158px; */
-/* display: flex; */
-
-/* @media screen and (min-width: 768px) {
-  .conteiner {
-    max-width: 768px;
-    /* height: 70px; */
-/* display: flex; */
-
-/* @media screen and(min-width:1200px) {
-  .conteiner-nav {
-    max-width: 1158px;
-  }
-} */
-* .navwebstudio {
+.navwebstudio {
   display: flex;
-  /* padding-top: 24px;
-  padding-bottom: 24px; */
 }
 
 .navigation {
@@ -139,19 +114,6 @@ img {
 .heder-mail-telefon:focus {
   color: var(--logo-text-color);
 }
-
-/* .navtelefon {
-  display: none;
-  margin-left: 332px;
-  padding-inline-start: 0px;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-top: 24px;
-  padding-bottom: 24px;
-} */
-/* .li-telefon {
-  margin-right: 40px;
-} */
 
 @media screen and (max-width: 760px) {
   .navtelefon {
@@ -232,16 +194,15 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-
-  margin: 0;
+  margin-left: auto;
   padding: 0;
   background-color: transparent;
   cursor: pointer;
-  border: none;
+  border: 1px;
   border-radius: 50%;
   outline: none;
 }
-@media screen and (min-width: 768px) {
+.menu @media screen and (min-width: 768px) {
   .menu-toggle {
     display: none;
   }
@@ -319,7 +280,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0;
+  margin-left: auto;
   padding: 0;
   background-color: transparent;
   cursor: pointer;
@@ -334,16 +295,16 @@ img {
 }
 .menu-toggle:hover,
 .menu-toggle:focus {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: transparent;
 }
 .menu-container {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   padding: 32px;
-  background-color: #3f51b5;
+  background-color: #ffffff;
   z-index: 999;
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
@@ -363,11 +324,49 @@ img {
   list-style: none;
 }
 .mobile-menu .link {
+  padding-top: 40px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
   display: block;
-  padding: 10px;
-  color: #fff;
+  color: #2e2f42;
   text-decoration: none;
 }
+.mobile-menu .link:hover,
+.mobile-menu .link:focus {
+  color: #404bbf;
+}
+.mobil-meny-telefon {
+  margin-top: 284px;
+  display: block;
+}
+
+.telefon-mobil {
+  color: #2e2f42;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+}
+.telefon-mobil:hover,
+.telefon-mobil:focus {
+  color: #404bbf;
+}
+
+.mail-mobil {
+  display: block;
+  padding-top: 40px;
+  color: #2e2f42;
+  font-size: 24px;
+  line-height: 1.11;
+}
+.mail-mobil:hover,
+.mail-mobil:focus {
+  color: #404bbf;
+}
+
+/* .link:last-child {
+  margin-bottom: 0;
+} */
 
 /* Heder links */
 
@@ -401,6 +400,12 @@ img {
 
 .links-heder:focus {
   color: var(--logo-text-color);
+}
+
+.ul-svg-mobil-meny {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 48px;
 }
 
 .conteiner-heder-portfolio {
@@ -545,9 +550,13 @@ h2 {
   color: var(--general-text-color);
   margin-top: 8px;
 }
-.benefits .firsttitle {
-  text-align: left;
+
+@media screen and (min-width: 768px) {
+  .benefits .firsttitle {
+    text-align: left;
+  }
 }
+
 .firsttitle {
   text-align: center;
   font-weight: 500;
@@ -572,8 +581,6 @@ h2 {
   }
 }
 
-@media screen and (min-width: 768px) {
-}
 @media screen and (min-width: 1200px) {
 }
 /* Conteiner Strategy */
